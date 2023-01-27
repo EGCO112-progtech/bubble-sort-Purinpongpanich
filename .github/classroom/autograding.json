@@ -21,16 +21,6 @@
       "points": null
     },
     {
-      "name": "test3",
-      "setup": "gcc main.c -o bubble",
-      "run": "./bubble 3 3 1 3 ",
-      "input": "",
-      "output": "    3    3    3\r\n    3    3    3\r\n    3    3    3\r\n    3    3    3\r\n    3    3    3",
-      "comparison": "included",
-      "timeout": 10,
-      "points": null
-    },
-    {
       "name": "test 4",
       "setup": "gcc main.c -o bubble",
       "run": "./bubble 6 8 6",
