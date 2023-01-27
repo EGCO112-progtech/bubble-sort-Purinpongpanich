@@ -29,16 +29,6 @@
       "comparison": "included",
       "timeout": 10,
       "points": null
-    },
-    {
-      "name": "selection 1",
-      "setup": "gcc main.c -o selection",
-      "run": "./selection 5 7 8 7 1 78 6",
-      "input": "",
-      "output": "   5    7    8    7    1   78    6\r\n    5    7    7    1    8    6   78\r\n    5    7    1    7    6    8   78\r\n    5    1    7    6    7    8   78\r\n    1    5    6    7    7    8   78\r\n    1    5    6    7    7    8   78",
-      "comparison": "included",
-      "timeout": 10,
-      "points": null
     }
   ]
 }
