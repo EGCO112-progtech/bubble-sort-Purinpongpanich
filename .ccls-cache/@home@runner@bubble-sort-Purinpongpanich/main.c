@@ -4,9 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int Isprime();
+int Isprime(),prime();
 
-int main(int argc, char *argv[]) {
+int main (int argc, char *argv[]) {
   int i, j = 0, n, *a, *prime;
   n = argc - 1;
   a = (int *)malloc(sizeof(int) * n);
@@ -18,14 +18,21 @@ int main(int argc, char *argv[]) {
       j++;
     }
   }
+  insertion(a, n);
+  goto end;
   n = j;
   if (n == 0)
     printf("No prime\n");
   else {
     display(prime, n);
-    bubbleSort(prime, n);
+    //selectionSort(prime, n);
+    insertion(prime, n);
+    //bubbleSort(prime, n);
     display(prime, n);
   }
+  end:
+  free(a);
+  free(prime);
   return 0;
 }
 
